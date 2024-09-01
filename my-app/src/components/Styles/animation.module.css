@@ -1,0 +1,27 @@
+@keyframes animateStroke {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.animating {
+    fill: none;
+    stroke: rgb(237, 237, 237);
+    stroke-width: 1.75px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation-delay: 0.1s;
+    animation: animateStroke 3.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+    transition: stroke 0.25s;
+
+    &:hover {
+        stroke: rgb(235, 223, 67);
+        cursor: pointer;
+    }
+}

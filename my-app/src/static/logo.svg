@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" className="animating" fill="none" stroke="#04d9ff" stroke-linecap="square" stroke-linejoin="round"
+    viewBox="-1 -2 90 75">
+    <g>
+        <path d="m 2 6 l 0 -4 l 19 0 l 0 18 L 2 20 l 0 -5 m 4 -10 l 11 0 l -11 12 L 17 17" stroke-width="1.25" transform="scale(0.05)" />
+    </g>
+</svg>

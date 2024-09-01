@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.projectsSection {
+    height: 60rem;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: clamp(4rem, 0.1268rem + 16.5258vw, 15rem);
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projectsSection.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.somethings {
+    font-weight: 600;
+    font-size: clamp(1.4rem, 1.2239rem + 0.7512vw, 1.9rem);
+    color: rgb(237, 237, 237);
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.projectsContainer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.projectWrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    margin-bottom: 20px;
+}
+
+.project {
+    position: relative;
+    width: clamp(20rem, 16.4789rem + 15.0235vw, 30rem);
+    height: calc(75rem - clamp(37rem, 36.6479rem + 1.5023vw, 38rem));
+    background-color: rgba(71, 71, 71, 0.322);
+    margin-left: clamp(2rem, -1.8423rem + 8.7136vw, 6rem);
+    margin-right: clamp(2rem, -1.8423rem + 8.7136vw, 6rem);
+    padding: 20px;
+    padding-bottom: clamp(4rem, 0.1268rem + 16.5258vw, 15rem);
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.projectContent {
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+}
+
+.projectTitleLink {
+    text-decoration: none;
+}
+
+.projectTitle {
+    font-weight: 550;
+    font-size: 1.6rem;
+    color: rgb(237, 237, 237);
+    text-align: center;
+    font-family: 'Poppins';
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+.projectTitle:hover {
+    color: rgb(235, 223, 67);
+}
+
+.projectDescription {
+    font-weight: 400;
+    font-size: clamp(1rem, 0.9472rem + 0.2254vw, 1.15rem);
+    color: rgb(237, 237, 237);
+    line-height: 30px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    margin-bottom: 0rem;
+}
+
+.descriptionPoint {
+    margin-top: 10px;
+    text-indent: -0.7em;
+    padding-left: 1.3em;
+    font-family: 'Poppins';
+}
+
+.projectImage {
+    width: clamp(17.5rem, 13.9789rem + 15.0235vw, 27.5rem);
+    height: clamp(9rem, 7.5915rem + 6.0094vw, 13rem);
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.projectImage:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.codingLanguages {
+    position: absolute;
+    margin-top: 1rem;
+    bottom: 10px;
+    left: 20px;
+    font-family: 'Cascadia';
+    color: rgb(196, 196, 196);
+    max-width: 450px;
+    font-size: 0.8rem;
+}
+
+.projectLinksWrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 9px;
+    margin-right: clamp(14rem, 10.8310rem + 13.5211vw, 23rem);
+}
+
+.projectLinksGithub {
+    color: rgb(237, 237, 237);
+    margin-top: 0.6rem;
+    transition: color 0.3s ease;
+}
+
+.projectLinksExtLink {
+    color: rgb(237, 237, 237);
+    margin-top: 0.4rem;
+    transition: color 0.3s ease;
+}
+
+.projectLinksGithub:hover {
+    color: rgb(235, 223, 67);
+}
+
+.projectLinksExtLink:hover {
+    color: rgb(235, 223, 67);
+}
+
+@media (max-width: 1577px) {
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectsSection {
+        height: 140rem;
+    }
+}

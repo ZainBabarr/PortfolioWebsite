@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia', sans-serif;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(9rem, 5.8310rem + 13.5211vw, 17rem);
+    padding-bottom: 20rem;
+    margin-left: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    margin-right: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    align-self: center;
+}
+
+.hey {
+    font-weight: 300;
+    font-size: 1.1em;
+    color: rgb(235, 223, 67);
+    text-align: left;
+    border-radius: 10px;
+    font-family: 'Cascadia';
+    padding: 0;
+}
+
+.name {
+    font-weight: 700;
+    font-size: clamp(2.7rem, 2.3845rem + 1.3463vw, 4rem);
+    color: rgb(237, 237, 237);
+    font-family: 'Poppins';
+    padding-top: 10px;
+    line-height: clamp(3.7rem, 4vw + 1rem, 6rem);
+}
+
+.nameSubHeading {
+    font-weight: 700;
+    font-size: clamp(2.1rem, 1.4310rem + 2.8545vw, 4rem);
+    color: rgb(196, 196, 196);
+    font-family: 'Poppins';
+    line-height: clamp(2.8rem, 3vw + 3rem, 2rem);
+    margin-bottom: 30px;
+}
+
+.introDescription {
+    font-weight: 10;
+    font-size: 1em;
+    color: rgb(237, 237, 237);
+    max-width: 770px;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.socials {
+    color: white;
+    width: 50px;
+    transition-duration: 0.2s;
+}
+
+.socials:hover {
+    color: rgb(235, 223, 67);
+    transition-duration: 0.2s;
+}
+
+.importantIntroDescription {
+    font-weight: 10;
+    color: rgb(235, 223, 67);
+    font-family: 'Poppins';
+}
+
+.socialIcons {
+    margin: 0 2px;
+    opacity: 0;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+.socialIcons:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 1640px) {
+    .nameSubHeading {
+        font-size: clamp(1.8rem, 1.2310rem + 1.8545vw, 3rem);
+        line-height: 1.2em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+.IntroElements p:nth-child(1) {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    animation-delay: 4.8s;
+}
+
+.IntroElements p:nth-child(2) {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    animation-delay: 5.1s;
+}
+
+.IntroElements p:nth-child(3) {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    animation-delay: 5.4s;
+}
+
+.IntroElements p:nth-child(4) {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    animation-delay: 5.7s;
+}
+
+.IntroElements div:nth-child(2) {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    animation-delay: 6s;
+}
+
+.socialIconsContainer a:nth-child(1) {
+    animation-delay: 6.2s;
+}
+
+.socialIconsContainer a:nth-child(2) {
+    animation-delay: 6.25s;
+}
+
+.socialIconsContainer a:nth-child(3) {
+    animation-delay: 6.3s;
+}

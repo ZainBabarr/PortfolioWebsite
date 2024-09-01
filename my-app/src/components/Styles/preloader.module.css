@@ -1,0 +1,115 @@
+@import "../../index.css";
+
+.preloader {
+    height: 100%;
+    width: 100%;
+    background: rgb(27, 27, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.preloaderHidden {
+    height: 100vh;
+    width: 100%;
+    background: #060606;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    translate: 0% -100%;
+    opacity: 0%;
+    transition-property: translate, opacity;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.p {
+    font-family: 'Cascadia', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+    margin-right: 4px;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    font-size: 0.8rem;
+}
+
+.pHidden {
+    font-family: 'Cascadia', sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    margin-top: 10px;
+    text-align: center;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    font-size: 0.8rem;
+}
+
+svg {
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+svg>g {
+    transform: translate(0, 0);
+}
+
+.largeSvg {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes animateStroke {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.animating {
+    fill: none;
+    stroke: rgb(235, 223, 67);
+    stroke-width: 1.75px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation-delay: 0.1s;
+    animation: animateStroke 3.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+}
+
+.closing {
+    fill: none;
+    stroke: rgb(235, 223, 67);
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    transition-property: stroke-dashoffset, scale, translate, opacity;
+    scale: 0;
+    opacity: 0;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.19, 0.91, 0.57, 1.02);
+}

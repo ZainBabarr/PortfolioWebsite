@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Cascadia';
+  src: url('./static/Cascadia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  background: rgb(27, 27, 27);
+}
+
+.footer {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  font-family: 'Cascadia';
+  font-size: 0.8rem;
+  color: rgb(168, 168, 168);
+}
+
+.headingNumbers {
+  color: rgb(235, 223, 67);
+  padding-right: 5px;
+  font-size: clamp(1.4rem, 1.2239rem + 0.7512vw, 1.9rem);
+}
+
+.number {
+  color: rgb(235, 223, 67);
+  font-weight: 600px;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(71, 71, 71);
+  background-clip: padding-box;
+}

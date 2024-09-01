@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(27, 27, 27);
+    padding: clamp(3px, 20px, 20px);
+    position: fixed;
+    transition: box-shadow 0.1s ease;
+    z-index: 1000;
+}
+
+.navbar.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.NavbarElements {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.navbar-svg {
+    display: flex;
+    margin-left: clamp(0.5rem, -0.0282rem + 2.2535vw, 2rem);
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+    transition: width 0.5s ease, height 0.5s ease;
+    width: 48px;
+    height: 48px;
+}
+
+.NavbarElements button {
+    opacity: 0;
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+.NavbarElements button:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.NavbarElements button:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.NavbarElements button:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.NavbarElements button:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.navbar-svg {
+    fill: none;
+    stroke: rgb(237, 237, 237);
+    stroke-width: 1.3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    transition: stroke 0.5s ease;
+}
+
+.navbar-svg:hover {
+    stroke: rgb(235, 223, 67);
+}
+
+.sectionButton {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.resumeButton {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgb(235, 223, 67);
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(235, 223, 67);
+}
+
+.NavbarElements button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebarToggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    animation: fadeInFromTop 0.5s ease forwards;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    background-color: #212121;
+    box-shadow: -6px 0px 6px 1px #0000006f;
+    height: 100vh;
+    width: min(75vw, 400px);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar button {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.resumeButtonSidebar {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgb(235, 223, 67);
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(235, 223, 67);
+}
+
+.closeSidebar {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    transition-duration: 0.25s;
+    margin-bottom: 20px;
+}
+
+.sidebar button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .NavbarElements {
+        display: none;
+    }
+
+    .sidebarToggle {
+        display: block;
+    }
+
+    .navbar-svg {
+        transition: ease all .5s;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-svg {
+        transition: ease all .5s;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

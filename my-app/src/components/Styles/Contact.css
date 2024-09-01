@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+.contactSection {
+    margin-top: 28rem;
+    padding-bottom: clamp(5rem, 2.3592rem + 11.2676vw, 12.5rem);
+    margin-left: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    margin-right: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    background-color: rgb(27, 27, 27);
+    font-family: 'Poppins';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contactSection.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.getInTouch {
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: clamp(1.4rem, 1.2239rem + 0.7512vw, 1.9rem);
+    color: rgb(237, 237, 237);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.bigContact {
+    font-weight: 600;
+    font-size: clamp(2.5rem, 1.9718rem + 2.2535vw, 4rem);
+    color: rgb(237, 237, 237);
+    text-align: center;
+    font-family: 'Poppins';
+    max-width: 730px;
+    border-radius: 10px;
+}
+
+.contactDetails {
+    font-weight: 400;
+    font-size: 1em;
+    color: rgb(237, 237, 237);
+    text-align: center;
+    font-family: 'Poppins';
+    max-width: 500px;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+.socialIconsContact {
+    margin: 15px 10px;
+    cursor: pointer;
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socialIconsContact:hover {
+    color: rgb(235, 223, 67);
+}
+
+.reachOutButton {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background: none;
+    border: 2px solid rgb(235, 223, 67);
+    padding: 14px 13px;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: rgb(235, 223, 67);
+}

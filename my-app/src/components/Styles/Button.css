@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-button {
+    font-size: 15px;
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    font-weight: 400;
+    opacity: 1;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Cascadia', sans-serif;
+    transition: opacity 0.3s ease, background-color 0.1s ease, color 0.1s ease;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.custom-button:hover {
+    color: rgb(235, 223, 67);
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resumeButton {
+    color: rgb(235, 223, 67);
+    border: 2px solid rgb(235, 223, 67);
+    margin-left: 10px;
+}
+
+.resumeButton:hover {
+    background-color: rgba(235, 228, 135, 0.2);
+    color: rgb(235, 223, 67);
+    border: 2px solid rgb(235, 223, 67);
+}
+
+.reachOutButton {
+    color: rgb(235, 223, 67);
+    border: 2px solid rgb(235, 223, 67);
+    margin-left: 10px;
+}
+
+.reachOutButton:hover {
+    background-color: rgba(235, 228, 135, 0.2);
+    color: rgb(235, 223, 67);
+    border: 2px solid rgb(235, 223, 67);
+}
