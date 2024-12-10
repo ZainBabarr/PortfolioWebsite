@@ -5,7 +5,7 @@
 }
 
 .contactSection {
-    margin-top: 28rem;
+    margin-top: calc(39rem - clamp(10rem, 3.3099rem + 28.5446vw, 29rem));
     padding-bottom: clamp(5rem, 2.3592rem + 11.2676vw, 12.5rem);
     margin-left: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
     margin-right: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
@@ -54,6 +54,7 @@
 
 .contactDetails {
     font-weight: 400;
+    margin-top: 1rem;
     font-size: 1em;
     color: rgb(237, 237, 237);
     text-align: center;
@@ -64,7 +65,7 @@
 }
 
 .socialIconsContact {
-    margin: 15px 10px;
+    margin: 25px 10px;
     cursor: pointer;
     color: rgb(237, 237, 237);
     text-decoration: none;

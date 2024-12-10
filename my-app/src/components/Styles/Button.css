@@ -54,3 +54,9 @@
     color: rgb(235, 223, 67);
     border: 2px solid rgb(235, 223, 67);
 }
+
+.connectWithMe:hover {
+    background-color: rgba(235, 228, 135, 0.2);
+    color: rgb(235, 223, 67);
+    border: 2px solid rgb(235, 223, 67);
+}

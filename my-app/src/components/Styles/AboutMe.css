@@ -26,6 +26,9 @@
     padding-top: 40px;
     max-width: 950px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-heading {
@@ -39,7 +42,7 @@
 .about-me-content {
     margin-top: 30px;
     line-height: 1.6;
-    font-size: clamp(1rem, 0.9648rem + 0.1502vw, 1.1rem);
+    font-size: clamp(1rem, 0.9648rem + 0.1502vw, 1.0rem);
     text-align: left;
     max-width: 1000px;
     color: rgb(237, 237, 237);
@@ -48,9 +51,22 @@
 .about-me-content p {
     font-family: 'Poppins';
     padding: 10px;
+    line-height: 1.5rem;
 }
 
 .about-me-content-important {
     color: rgb(235, 223, 67);
     font-family: 'Poppins';
+}
+
+.connectWithMe {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background: none;
+    border: 2px solid rgb(235, 223, 67);
+    padding: 14px 13px;
+    text-align: center;
+    margin-top: 3.0rem;
+    color: rgb(235, 223, 67);
 }

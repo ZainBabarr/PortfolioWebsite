@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Styles/Projects.css';
 import projectImage1 from '../static/anicollection.png';
 import projectImage2 from '../static/dailydoseoftech.png';
-import projectImage3 from '../static/portfolio.png';
+import projectImage3 from '../static/eventify.png';
 import { FiGithub } from "react-icons/fi";
 import { TbExternalLink } from "react-icons/tb";
 
@@ -39,20 +39,20 @@ const ProjectsSection = () => {
         {
             title: "AniCollection",
             description:
-                "Developed a responsive platform for creating and sharing anime collections using ReactJS. " +
-                "Used Firebase for user authentication and logging in and Firestore for storing anime collections. " +
-                "Integrated Jikan API for anime search and details.",
+                "Developed a platform for creating and sharing collaborative anime collections. " +
+                "Used Firebase for secure user authentication and Firestore for efficiently storing collection and user data. " +
+                "Integrated the Jikan API to search for anime and add them to their collections.",
             imgSrc: projectImage1,
-            tools: ["ReactJS", "HTML", "CSS", "Jikan API", "Firebase", "Firestore"],
+            tools: ["ReactJS", "Jikan API", "Firebase", "Firestore"],
             gitLink: "https://github.com/ZainBabarr/anicollection",
-            extLink: "https://anicollection.com",
+            extLink: "https://anicollection.org",
         },
         {
             title: "Daily Dose of Tech",
             description:
-                "Developed a Twitter bot in Python using Reddit’s API (PRAW) to scrape content from tech news subreddits. " +
-                "Automated tweets using Twitter’s API (Tweepy) to post curated content every 4 hours. " +
-                "Achieved over 1000 impressions, enhancing engagement and visibility.",
+                "Developed a Twitter bot to scrape content from tech news subreddits using Reddit's API (PRAW). " +
+                "Automated tweets using an AWS Lambda function to call Twitter’s API (Tweepy) to post curated content daily. " +
+                "Achieved over 3500 organic impressions, enhancing engagement and visibility.",
             imgSrc: projectImage2,
             tools: ["Python", "Tweepy", "PRAW"],
             gitLink: "https://github.com/ZainBabarr/DailyDoseOfTechBot",
@@ -60,15 +60,15 @@ const ProjectsSection = () => {
         },
 
         {
-            title: "Portfolio Website",
+            title: "Eventify",
             description:
-                "Built a modern portfolio website with ReactJS, featuring a dynamic navigation system and project showcase. " +
-                "Developed React components for seamless navigation and engaging animations. " +
-                "Ensured a responsive design with CSS for a consistent user experience across all devices.",
+                "Created a website for users to connect to their Spotify account for event recommendations. " +
+                "Leveraged Spotify's Web API to access users' top listened-to artists. " +
+                "Used Ticketmaster's API to fetch events, letting users view and add them to their Google and Apple calendars.",
             imgSrc: projectImage3,
-            tools: ["ReactJS", "HTML", "CSS", "JavaScript"],
-            gitLink: "https://github.com/username/portfolio",
-            extLink: "https://zainbabar.com",
+            tools: ["ReactJS", "Spotify Web API", "Ticketmaster API"],
+            gitLink: "https://github.com/ZainBabarr/Eventify",
+            extLink: "https://eventify.one",
         },
     ];
 

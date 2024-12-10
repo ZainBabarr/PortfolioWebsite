@@ -42,26 +42,59 @@
     height: 48px;
 }
 
-.NavbarElements button {
+.NavbarContainer {
+    display: flex;
+    align-items: center;
+}
+
+.NavbarElements {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.NavbarElements li {
     opacity: 0;
     animation: fadeInFromTop 0.5s ease forwards;
 }
 
-.NavbarElements button:nth-child(1) {
+.NavbarElements li:nth-child(1) {
     animation-delay: 0.1s;
 }
 
-.NavbarElements button:nth-child(2) {
+.NavbarElements li:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.NavbarElements button:nth-child(3) {
+.NavbarElements li:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.NavbarElements button:nth-child(4) {
+.NavbarElements li:nth-child(4) {
     animation-delay: 0.4s;
 }
+
+/* Ensure the buttons animate in when the component mounts */
+.animate {
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .navbar-svg {
     fill: none;
@@ -193,17 +226,5 @@
         transition: ease all .5s;
         width: 48px;
         height: 48px;
-    }
-}
-
-@keyframes fadeInFromTop {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
     }
 }
