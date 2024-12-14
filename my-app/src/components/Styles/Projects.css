@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, 'Cascadia';
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
 .projectsSection {
-    height: 60rem;
+    height: 90rem;
+    margin-top: 14rem;
     background-color: rgb(27, 27, 27);
     text-align: center;
     box-sizing: border-box;
-    padding-bottom: clamp(4rem, 0.1268rem + 16.5258vw, 15rem);
     opacity: 0;
     transform: translateY(0px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -32,142 +32,307 @@ body {
     padding: 0.5em 1em;
     margin: 20px 0;
     border-radius: 10px;
-}
-
-.projectsContainer {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 50px;
-    flex-wrap: wrap;
-}
-
-.projectWrapper {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 26%;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
 }
 
 .project {
-    position: relative;
-    width: clamp(20rem, 16.4789rem + 15.0235vw, 30rem);
-    height: calc(75rem - clamp(37rem, 36.6479rem + 1.5023vw, 38rem));
-    background-color: rgba(71, 71, 71, 0.322);
-    margin-left: clamp(2rem, -1.8423rem + 8.7136vw, 6rem);
-    margin-right: clamp(2rem, -1.8423rem + 8.7136vw, 6rem);
-    padding: 20px;
-    padding-bottom: clamp(4rem, 0.1268rem + 16.5258vw, 15rem);
-    border-radius: 10px;
-    text-align: left;
-    overflow: hidden;
+    padding-left: clamp(0rem, -6.3380rem + 27.0423vw, 20rem);
+    padding-right: clamp(0rem, -6.3380rem + 27.0423vw, 20rem);
+    margin-bottom: 5rem;
+}
+
+.twoDivs {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
 }
 
-.projectContent {
-    margin-bottom: 1rem;
-    justify-content: flex-end;
+.projectImage {
+    height: clamp(17.5rem, 16.6197rem + 3.7559vw, 20rem);
+    width: auto;
+    border-radius: 10px;
+    background-color: #51a9f0; /* Add this background color for tint */
+    filter: brightness(0.55); /* Adjust the tint effect */
+    transition: filter 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    z-index: -100;
 }
 
-.projectTitleLink {
+.projectImage:hover {
+    filter: none; /* Clear filter on hover */
+    background-color: transparent; /* Remove background tint on hover */
+    cursor: pointer;
+}
+
+.descriptionSection{
+    margin-left: -27rem;
+    margin-top: 2rem;
     text-decoration: none;
+}
+
+.descriptionSectionREVERSE {
+    margin-right: -27rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.description {
+    margin-left: -7rem;
+    font-size: 0.95rem;
+    background-color: rgb(59, 56, 56);
+    color: rgb(237, 237, 237);
+    text-align: right;
+    padding: 1rem;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    box-shadow: -8px 9px 12px rgb(19, 19, 19);
+}
+
+.featured {
+    font-weight: 550;
+    font-size: 1.0rem;
+    color: var(--accent-color);
+    text-align: right;
+    font-family: 'Cascadia';
+    text-decoration: none !important;
+    margin-bottom: 0.2rem;
+    z-index: 2;
+    margin-top: 1rem;
 }
 
 .projectTitle {
     font-weight: 550;
     font-size: 1.6rem;
     color: rgb(237, 237, 237);
-    text-align: center;
+    text-align: right;
     font-family: 'Poppins';
     text-decoration: none !important;
+    z-index: 2;
     transition: color 0.3s ease;
 }
 
-.projectTitle:hover {
-    color: rgb(235, 223, 67);
-}
-
-.projectDescription {
-    font-weight: 400;
-    font-size: clamp(1rem, 0.9472rem + 0.2254vw, 1.0rem);
-    color: rgb(237, 237, 237);
-    line-height: 30px;
-    margin-top: 10px;
-    word-wrap: break-word;
-    margin-bottom: 0rem;
-}
-
-.descriptionPoint {
-    margin-top: 10px;
-    text-indent: -0.7em;
-    padding-left: 1.3em;
-    font-family: 'Poppins';
-}
-
-.projectImage {
-    width: clamp(17.5rem, 13.9789rem + 15.0235vw, 27.5rem);
-    height: clamp(9rem, 7.5915rem + 6.0094vw, 13rem);
-    object-fit: cover;
-    border-radius: 10px;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-}
-
-.projectImage:hover {
-    opacity: 1.0;
-    cursor: pointer;
-}
-
-.codingLanguages {
-    position: absolute;
-    margin-top: 1rem;
-    bottom: 10px;
-    left: 20px;
-    font-family: 'Cascadia';
-    color: rgb(196, 196, 196);
-    max-width: 450px;
-    font-size: 0.8rem;
-}
-
-.projectLinksWrapper {
+.tools {
     display: flex;
-    justify-content: flex-start;
-    gap: 9px;
-    margin-right: clamp(14rem, 10.8310rem + 13.5211vw, 23rem);
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
 }
 
-.projectLinksGithub {
+.tool {
+    font-size: 0.83rem;
+    color: rgb(196, 196, 196);
+    font-family: 'Cascadia';
+}
+
+
+.toolsREVERSE {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.twoDivs.reverse {
+    flex-direction: row-reverse;
+}
+
+.descriptionREVERSE {
+    margin-right: clamp(-40rem, -52.727rem + 63.64vw, -7rem);
+    font-size: 0.95rem;
+    background-color: rgb(59, 56, 56);
     color: rgb(237, 237, 237);
-    margin-top: 0.6rem;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    box-shadow: -8px 9px 12px rgb(19, 19, 19);
+}
+
+.projectTitleREVERSE {
+    font-weight: 550;
+    font-size: 1.6rem;
+    color: rgb(237, 237, 237);
+    text-align: left;
+    font-family: 'Poppins';
+    text-decoration: none !important;
+}
+
+.featuredREVERSE {
+    font-weight: 550;
+    font-size: 1.0rem;
+    color: var(--accent-color);
+    text-align: left;
+    font-family: 'Cascadia';
+    text-decoration: none !important;
+    margin-bottom: 0.2rem;
+}
+
+.projectLinks {
+    color: rgb(237, 237, 237);
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-left: 0.8rem;
     transition: color 0.3s ease;
 }
 
-.projectLinksExtLink {
+.projectLinks:hover {
+    color: var(--accent-color);
+}
+
+.projectLinksREVERSE:hover {
+    color: var(--accent-color);
+}
+
+.projectLinkIcons {
+    display: flex-end;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.projectLinksREVERSE {
     color: rgb(237, 237, 237);
-    margin-top: 0.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-right: 0.8rem;
     transition: color 0.3s ease;
 }
 
-.projectLinksGithub:hover {
-    color: rgb(235, 223, 67);
+.projectLinkIconsREVERSE {
+    display: flex;
+    margin-top: 1rem;
+    text-align: right;
 }
 
-.projectLinksExtLink:hover {
-    color: rgb(235, 223, 67);
-}
-
-@media (max-width: 1577px) {
-    .projectsContainer {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Responsive styles for smaller screens (768px and below) */
+@media (max-width: 768px) {
 
     .projectsSection {
-        height: 140rem;
+        margin-top: 0rem;
+        height: 70rem;
+    }
+
+    .project{
+        margin-bottom: 5rem;
+    }
+
+    .twoDivs {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin: 0;
+    }
+
+    .projectImage {
+        height: 50; /* Fixed height for cropping */
+        width: 100%; /* Full width */
+        border-radius: 10px;
+        object-fit: cover; /* Crops the image */
+        position: relative;
+        overflow: hidden; /* Ensure content doesn't spill out */
+        filter: brightness(0.2);
+    }
+
+    .descriptionSection {
+        position: absolute;
+        font-size: 0.4rem;
+        color: rgb(237, 237, 237); /* Light text */
+        padding-left: clamp(3rem, -2.2817rem + 22.5352vw, 18rem); /* Adjust left padding */
+        padding-right: clamp(3rem, -2.2817rem + 22.5352vw, 18rem); /* Adjust right padding */
+        margin-right: 0; /* Reset margin */
+        margin-top: 2rem;
+        margin-left: 0; /* Reset margin */
+        width: 100%; /* Ensure full width */
+        text-align: center; /* Center text */
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* Space between elements */
+        background-color: none;
+    }
+
+    .description {
+        font-size: 0.95rem; /* Adjust font size for smaller screens */
+        color: rgb(237, 237, 237);
+        text-align: left; /* Align text to the left */
+        padding: 0.8rem; /* Adjust padding for better fit */
+        border-radius: 5px; /* Slightly smaller border radius */
+        width: auto; /* Let the box shrink */
+        margin: 0 auto; /* Center the description box */
+        box-shadow: -8px 9px 12px rgb(19, 19, 19);
+    }
+
+    .descriptionREVERSE {
+        font-size: 0.95rem;
+        color: rgb(237, 237, 237);
+        text-align: left;
+        padding: 0.8rem; /* Adjust padding */
+        border-radius: 5px;
+        width: auto; /* Shrink width */
+        margin: 0 auto; /* Center the box */
+        box-shadow: -8px 9px 12px rgb(19, 19, 19);
+    }
+
+    .projectTitle {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .featured {
+        text-align: left;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .projectTitleREVERSE {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .featured {
+        font-size: 1rem;
+        color: var(--accent-color);
+    }
+
+    .tools {
+        gap: 1rem;
+        margin-top: 0.5rem;
+        font-size: 0.3rem;
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center; /* Ensure vertical alignment */
+    }
+    
+    .toolsREVERSE {
+        gap: 1rem;
+        margin-top: 0.5rem;
+        font-size: 0.3rem;
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center; /* Ensure vertical alignment */
+    }
+    
+
+    .projectLinks {
+        color: rgb(237, 237, 237);
+        transition: color 0.3s ease, transform 0.3s ease;
+        margin-left: 0.8rem;
+        transition: color 0.3s ease;
+    }
+
+    .projectLinkIcons {
+        display: flex-end;
+        flex-direction: row-reverse;
+        margin-top: 0.3rem;
+        text-align: left;
+        padding-left: 0rem;
+    }
+    
+    .projectLinkIconsREVERSE {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        text-align: left;
+        padding-left: 0rem;
     }
 }

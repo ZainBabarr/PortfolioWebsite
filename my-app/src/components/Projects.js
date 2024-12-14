@@ -39,9 +39,7 @@ const ProjectsSection = () => {
         {
             title: "AniCollection",
             description:
-                "Developed a platform for creating and sharing collaborative anime collections. " +
-                "Used Firebase for secure user authentication and Firestore for efficiently storing collection and user data. " +
-                "Integrated the Jikan API to search for anime and add them to their collections.",
+                "A platform for creating and sharing anime collections. Users can sign in securely, store their collection data, and search for anime using the Jikan API to add them to their collections. ",
             imgSrc: projectImage1,
             tools: ["ReactJS", "Jikan API", "Firebase", "Firestore"],
             gitLink: "https://github.com/ZainBabarr/anicollection",
@@ -50,9 +48,7 @@ const ProjectsSection = () => {
         {
             title: "Daily Dose of Tech",
             description:
-                "Developed a Twitter bot to scrape content from tech news subreddits using Reddit's API (PRAW). " +
-                "Automated tweets using an AWS Lambda function to call Twitter’s API (Tweepy) to post curated content daily. " +
-                "Achieved over 3500 organic impressions, enhancing engagement and visibility.",
+                "A Twitter bot that tweets daily tech news by gathering content from Reddit. Automated with AWS Lambda, the bot gained 3,500+ impressions, increasing engagement and visibility.",
             imgSrc: projectImage2,
             tools: ["Python", "Tweepy", "PRAW"],
             gitLink: "https://github.com/ZainBabarr/DailyDoseOfTechBot",
@@ -62,9 +58,7 @@ const ProjectsSection = () => {
         {
             title: "Eventify",
             description:
-                "Created a website for users to connect to their Spotify account for event recommendations. " +
-                "Leveraged Spotify's Web API to access users' top listened-to artists. " +
-                "Used Ticketmaster's API to fetch events, letting users view and add them to their Google and Apple calendars.",
+                "A web app that connects to Spotify to suggest concerts and events based on users' favorite artists, with the option to add them to Google or Apple calendars.",
             imgSrc: projectImage3,
             tools: ["ReactJS", "Spotify Web API", "Ticketmaster API"],
             gitLink: "https://github.com/ZainBabarr/Eventify",
@@ -79,41 +73,122 @@ const ProjectsSection = () => {
                     <span className="headingNumbers">2.</span> Some Things I've Made
                 </div>
             </div>
+    
+            <div className="threeProjects">
 
-            <div className="projectsContainer">
-                {projects.map((project, index) => (
-                    <div key={index} className="projectWrapper">
-                        <div className="project">
-                            <div className="projectContent">
-                                <a href={project.extLink} target="_blank" rel="noreferrer" className="projectTitleLink">
-                                    <p className="projectTitle">{project.title}</p>
-                                </a>
-                                <div className="projectDescription">
-                                    {project.description.split(". ").map((sentence, idx) => (
-                                        <div key={idx} className="descriptionPoint">• {sentence}</div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="imageContent">
-                                <a href={project.extLink} target="_blank" rel="noreferrer">
-                                    <img src={project.imgSrc} alt={`Project ${index + 1}`} className="projectImage" />
-                                </a>
-                            </div>
-                            <em className="codingLanguages">{project.tools.join(" • ")}</em>
-                        </div>
-                        <div className="projectLinksWrapper">
-                            <a href={project.gitLink} target="_blank" rel="noopener noreferrer">
-                                <FiGithub className="projectLinksGithub" size={24} />
-                            </a>
-                            <a href={project.extLink} target="_blank" rel="noopener noreferrer">
-                                <TbExternalLink className="projectLinksExtLink" size={40} />
-                            </a>
-                        </div>
+            <div className="project">
+            <div className="twoDivs">
+                {/* Image Section */}
+                <div className="image">
+                    <a href={projects[0].extLink} target="_blank" rel="noopener noreferrer">
+                        <img src={projectImage1} alt="AniCollection" className="projectImage" />
+                    </a>
+                </div>
+
+                {/* Description Section */}
+                <div className="descriptionSection">
+                    <p className="featured">Featured Project</p>
+                    <p className="projectTitle">{projects[0].title}</p>
+                    <div className="description">
+                        <p>{projects[0].description}</p>
                     </div>
-                ))}
+                    <div className="tools">
+                        {projects[0].tools.map((tool, idx) => (
+                            <span key={idx} className="tool">{tool}</span>
+                        ))}
+                    </div>
+                    <div className="projectLinkIcons">
+
+                        <a href={projects[0].gitLink} target="_blank" rel="noopener noreferrer">
+                            <FiGithub className="projectLinks"/>
+                        </a>
+
+                        <a href={projects[0].extLink} target="_blank" rel="noopener noreferrer">
+                            <TbExternalLink className="projectLinks"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="project">
+            <div className="twoDivs">
+                {/* Description Section */}
+                <div className="descriptionSectionREVERSE">
+                    <p className="featuredREVERSE">Featured Project</p>
+                    <p className="projectTitleREVERSE">{projects[1].title}</p>
+                    <div className="descriptionREVERSE">
+                        <p>{projects[1].description}</p>
+                    </div>
+                    <div className="toolsREVERSE">
+                        {projects[1].tools.map((tool, idx) => (
+                            <span key={idx} className="tool">{tool}</span>
+                        ))}
+                    </div>
+                    <div className="projectLinkIconsREVERSE">
+
+                        <a href={projects[1].gitLink} target="_blank" rel="noopener noreferrer">
+                            <FiGithub className="projectLinksREVERSE"/>
+                        </a>
+                        <a href={projects[1].extLink} target="_blank" rel="noopener noreferrer">
+                            <TbExternalLink className="projectLinksREVERSE"/>
+                        </a>
+                    </div>
+                </div>
+                {/* Image Section */}
+                <div className="image">
+                    <a href={projects[1].extLink} target="_blank">
+                        <img src={projectImage2} alt="Daily Dose of Tech" className="projectImage" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div className="project">
+            <div className="twoDivs">
+                {/* Image Section */}
+                <div className="image">
+                    <a href={projects[2].extLink} target="_blank">
+                        <img src={projectImage3} alt="Eventify" className="projectImage" />
+                    </a>
+                </div>
+
+                {/* Description Section */}
+                <div className="descriptionSection">
+                    <p className="featured">Featured Project</p>
+                    <p className="projectTitle">{projects[2].title}</p>
+                    <div className="description">
+                        <p>{projects[2].description}</p>
+                    </div>
+                
+
+                    <div className="tools">
+                        {projects[2].tools.map((tool, idx) => (
+                            <span key={idx} className="tool">{tool}</span>
+                        ))}
+                    </div>
+                    
+                    <div className="projectLinkIcons">
+                        
+                        <a href={projects[2].gitLink} target="_blank" rel="noopener noreferrer">
+                            <FiGithub className="projectLinks"/>
+                        </a>
+                        <a href={projects[2].extLink} target="_blank" rel="noopener noreferrer">
+                            <TbExternalLink className="projectLinks"/>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
             </div>
         </div>
     );
+    
 };
 
 export default ProjectsSection;

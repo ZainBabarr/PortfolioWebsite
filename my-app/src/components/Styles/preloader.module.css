@@ -89,7 +89,7 @@ svg>g {
 
 .animating {
     fill: none;
-    stroke: rgb(235, 223, 67);
+    stroke: var(--accent-color);
     stroke-width: 1.75px;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -101,7 +101,7 @@ svg>g {
 
 .closing {
     fill: none;
-    stroke: rgb(235, 223, 67);
+    stroke: var(--accent-color);
     stroke-width: 1.5px;
     stroke-linecap: round;
     stroke-linejoin: round;

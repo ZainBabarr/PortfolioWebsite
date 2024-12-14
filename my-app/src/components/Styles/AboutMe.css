@@ -7,8 +7,12 @@
     font-family: 'Cascadia', sans-serif;
 }
 
+:root {
+    --accent-color:#51a9f0;
+}
+
 .about-me-section {
-    padding-bottom: clamp(4rem, 0.1268rem + 16.5258vw, 20rem);
+    padding-bottom: calc(30rem - clamp(10rem, 6.4789rem + 15.0235vw, 20rem));
     margin-left: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
     margin-right: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
     background-color: rgb(27, 27, 27);
@@ -55,7 +59,7 @@
 }
 
 .about-me-content-important {
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
     font-family: 'Poppins';
 }
 
@@ -64,9 +68,9 @@
     font-weight: 400;
     cursor: pointer;
     background: none;
-    border: 2px solid rgb(235, 223, 67);
+    border: 2px solid var(--accent-color);
     padding: 14px 13px;
     text-align: center;
     margin-top: 3.0rem;
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
 }

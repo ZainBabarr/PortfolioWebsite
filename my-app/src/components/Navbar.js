@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Styles/Navbar.css';
 import Button from './Button';
-import resumePDF from '../static/Zain Babar Resume V4.pdf';
 
 const Navbar = () => {
     const [navbarAtTop, setNavbarAtTop] = useState(true);
@@ -83,9 +82,9 @@ const Navbar = () => {
                             </Button>
                         </li>
                         <li>
-                            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
-                                <Button className={`resumeButton`}>Resume</Button>
-                            </a>
+                        <a href="/Zain Babar Resume V4.pdf" target="_blank" rel="noopener noreferrer">
+                            <Button className={`resumeButton`}>Resume</Button>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -112,9 +111,9 @@ const Navbar = () => {
                         </Button>
                     </div>
                     <div>
-                        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
-                            <Button className="resumeButton">Resume</Button>
-                        </a>
+                    <a href="/Zain Babar Resume V4.pdf" target="_blank" rel="noopener noreferrer">
+                        <Button className={`resumeButton`}>Resume</Button>
+                    </a>
                     </div>
                 </div>
             </div>

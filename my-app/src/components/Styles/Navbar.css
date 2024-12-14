@@ -108,7 +108,7 @@
 }
 
 .navbar-svg:hover {
-    stroke: rgb(235, 223, 67);
+    stroke: var(--accent-color);
 }
 
 .sectionButton {
@@ -126,10 +126,10 @@
     font-weight: 600;
     cursor: pointer;
     background: none;
-    border: 1px solid rgb(235, 223, 67);
+    border: 1px solid var(--accent-color);
     padding: 10px 20px;
     text-align: center;
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
 }
 
 .NavbarElements button a {
@@ -183,10 +183,10 @@
     font-weight: 600;
     cursor: pointer;
     background: none;
-    border: 1px solid rgb(235, 223, 67);
+    border: 1px solid var(--accent-color);
     padding: 10px 20px;
     text-align: center;
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
 }
 
 .closeSidebar {

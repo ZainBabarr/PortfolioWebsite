@@ -15,7 +15,7 @@ const Intro = () => {
                     I'm a <span className="importantIntroDescription">Computer Science </span>
                     and <span className="importantIntroDescription">Business Administration </span>
                     student at <span className="importantIntroDescription">Wilfrid Laurier University </span>
-                    who loves tinkering with software. Currently, I'm searching for <span className="importantIntroDescription">software development internships</span>. Feel free to reach out!
+                    who loves creating tech solutions with people, for people. Currently, I'm searching for <span className="importantIntroDescription">software development internships</span>. Feel free to reach out!
                 </p>
             </ul>
 

@@ -22,13 +22,13 @@
 }
 
 .headingNumbers {
-  color: rgb(235, 223, 67);
+  color: var(--accent-color);
   padding-right: 5px;
   font-size: clamp(1.4rem, 1.2239rem + 0.7512vw, 1.9rem);
 }
 
 .number {
-  color: rgb(235, 223, 67);
+  color: var(--accent-color);
   font-weight: 600px;
 }
 

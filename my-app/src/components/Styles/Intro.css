@@ -20,7 +20,7 @@
 .hey {
     font-weight: 300;
     font-size: 1.1em;
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
     text-align: left;
     border-radius: 10px;
     font-family: 'Cascadia';
@@ -63,13 +63,13 @@
 }
 
 .socials:hover {
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
     transition-duration: 0.2s;
 }
 
 .importantIntroDescription {
     font-weight: 10;
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
     font-family: 'Poppins';
 }
 

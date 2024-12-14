@@ -23,7 +23,7 @@
 }
 
 .custom-button:hover {
-    color: rgb(235, 223, 67);
+    color: var(--accent-color);
 }
 
 .custom-link {
@@ -32,31 +32,31 @@
 }
 
 .resumeButton {
-    color: rgb(235, 223, 67);
-    border: 2px solid rgb(235, 223, 67);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     margin-left: 10px;
 }
 
 .resumeButton:hover {
-    background-color: rgba(235, 228, 135, 0.2);
-    color: rgb(235, 223, 67);
-    border: 2px solid rgb(235, 223, 67);
+    background-color: rgba(74, 163, 237, 0.2);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .reachOutButton {
-    color: rgb(235, 223, 67);
-    border: 2px solid rgb(235, 223, 67);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     margin-left: 10px;
 }
 
 .reachOutButton:hover {
-    background-color: rgba(235, 228, 135, 0.2);
-    color: rgb(235, 223, 67);
-    border: 2px solid rgb(235, 223, 67);
+    background-color: rgba(74, 163, 237, 0.2);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .connectWithMe:hover {
-    background-color: rgba(235, 228, 135, 0.2);
-    color: rgb(235, 223, 67);
-    border: 2px solid rgb(235, 223, 67);
+    background-color: rgba(74, 163, 237, 0.2);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }

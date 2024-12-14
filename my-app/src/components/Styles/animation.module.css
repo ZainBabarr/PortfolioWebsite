@@ -21,7 +21,7 @@
     transition: stroke 0.25s;
 
     &:hover {
-        stroke: rgb(235, 223, 67);
+        stroke: var(--accent-color);
         cursor: pointer;
     }
 }
