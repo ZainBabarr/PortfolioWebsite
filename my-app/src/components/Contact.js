@@ -46,7 +46,7 @@ const Contact = () => {
                 <div className="contactDetails">
                     <p>I'm always looking for opportunities to create new solutions and gain valuable experiences in the tech space. Feel free to reach out to me!</p>
                     <div className="socialIconsContainer">
-                        <a href="https://www.linkedin.com/in/z-babar" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/zain-babar" target="_blank" rel="noopener noreferrer">
                             <FaLinkedinIn className="socialIconsContact" size={30} />
                         </a>
                         <a href="https://github.com/ZainBabarr" target="_blank" rel="noopener noreferrer">

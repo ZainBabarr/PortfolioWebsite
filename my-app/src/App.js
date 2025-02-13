@@ -3,7 +3,7 @@ import './App.css';
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
-import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Preloader from "./components/Preloader";
@@ -16,7 +16,7 @@ function App() {
       {!navbarVisible && <Preloader setNavbarVisible={setNavbarVisible} />}
       {navbarVisible && <Navbar />}
       <Intro />
-      <AboutMe />
+      <Experience />
       <Projects />
       <Contact />
       <p className="footer">Built by Zain Babar using React.js</p>

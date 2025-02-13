@@ -40,7 +40,7 @@ const Navbar = () => {
     }, []);
 
     const scrollToSection = (sectionId) => {
-        const yOffset = -100;
+        const yOffset = -150;
 
         if (sectionId === '#top') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -67,8 +67,8 @@ const Navbar = () => {
                 <div className="NavbarContainer">
                     <ul className="NavbarElements">
                         <li>
-                            <Button className={animate ? "animate" : ""} onClick={() => scrollToSection('#aboutMeSection')}>
-                                <span className="number">1.</span> About Me
+                            <Button className={animate ? "animate" : ""} onClick={() => scrollToSection('#experienceSection')}>
+                                <span className="number">1.</span> Experience
                             </Button>
                         </li>
                         <li>
@@ -96,8 +96,8 @@ const Navbar = () => {
                 <button className="closeSidebar" onClick={() => setSidebarOpen(false)}>×</button>
                 <div className="SidebarElements">
                     <div>
-                        <Button onClick={() => scrollToSection('#aboutMeSection')}>
-                            <span className="number">1.</span> About Me
+                        <Button onClick={() => scrollToSection('#experienceSection')}>
+                            <span className="number">1.</span> Experience
                         </Button>
                     </div>
                     <div>

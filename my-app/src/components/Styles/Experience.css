@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --accent-color: #51a9f0;
+}
+
+.experience-section {
+    margin-left: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    margin-right: clamp(1rem, -3.5775rem + 19.5305vw, 16rem);
+    margin-bottom: clamp(5rem, -0.2817rem + 22.5352vw, 20rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgb(198, 198, 198);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 28rem;
+    text-align: left;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.timeline-item.left {
+    right: 50%;
+    padding-right: 1rem;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 1rem;
+}
+
+.timeline-content {
+    background: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.jobTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent-color);
+
+}
+
+.company {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.company:hover {
+    color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.duration {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.resumeButtonExperience{
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    margin-left: 10px;
+    margin-top: 2rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.resumeButtonExperience:hover {
+    background-color: rgba(74, 163, 237, 0.2);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+@media (max-width: 941px) {
+    .timeline-item {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .resumeButtonExperience{
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        right: 0;
+    }
+}
