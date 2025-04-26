@@ -39,7 +39,7 @@ const ProjectsSection = () => {
         {
             title: "AniCollection",
             description:
-                "A platform for creating and sharing anime collections. Users can sign in securely, store their collection data, and search for anime using the Jikan API to add them to their collections. ",
+                "An online platform for creating, managing, and sharing anime collections. Users can securely sign in, search for anime titles, and add them to their custom collections.",
             imgSrc: projectImage1,
             tools: ["ReactJS", "Jikan API", "Firebase", "Firestore"],
             gitLink: "https://github.com/ZainBabarr/anicollection",
@@ -48,9 +48,9 @@ const ProjectsSection = () => {
         {
             title: "Daily Dose of Tech",
             description:
-                "A Twitter bot that tweets daily tech news by gathering content from Reddit. Automated with AWS Lambda, the bot gained 10,000+ impressions, increasing engagement and visibility.",
+                "A Twitter bot automated with AWS Lambda that tweets out daily tech news by gathering content from Reddit. Through tweets, the bot has gained 10,000+ impressions",
             imgSrc: projectImage2,
-            tools: ["Python", "Tweepy", "PRAW"],
+            tools: ["Python", "Tweepy", "PRAW", "AWS Lambda"],
             gitLink: "https://github.com/ZainBabarr/DailyDoseOfTechBot",
             extLink: "https://x.com/Dose_ofTech",
         },
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
         {
             title: "Eventify",
             description:
-                "A web app that connects to Spotify to suggest concerts and events based on users' favorite artists, with the option to add them to Google or Apple calendars.",
+                "A web app that suggest concerts and events based on users’ favorite Spotify artists, allowing them to explore, track, and add events to their Google and Apple calendars.",
             imgSrc: projectImage3,
             tools: ["ReactJS", "Spotify Web API", "Ticketmaster API"],
             gitLink: "https://github.com/ZainBabarr/Eventify",
