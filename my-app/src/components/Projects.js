@@ -43,7 +43,7 @@ const ProjectsSection = () => {
             imgSrc: projectImage1,
             tools: ["ReactJS", "Jikan API", "Firebase", "Firestore"],
             gitLink: "https://github.com/ZainBabarr/anicollection",
-            extLink: "https://anicollection.org",
+            extLink: "https://ani-collection.netlify.app/",
         },
         {
             title: "Daily Dose of Tech",
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
             imgSrc: projectImage3,
             tools: ["ReactJS", "Spotify Web API", "Ticketmaster API"],
             gitLink: "https://github.com/ZainBabarr/Eventify",
-            extLink: "https://eventify.one",
+            extLink: "https://eventifyfyi.netlify.app/",
         },
     ];
 
