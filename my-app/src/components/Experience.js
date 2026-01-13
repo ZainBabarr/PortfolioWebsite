@@ -31,26 +31,33 @@ const Experience = () => {
 
     const jobs = [
         {
-            title: "Data Analytics Intern",
+            title: "Cybersecurity Intern",
             company: "Bruce Power",
-            duration: "May 2025 - August 2025",
-            description: "Regulatory Affairs Department",
+            duration: "May - August 2026",
+            description: "Incoming Summer 2026",
             extLink: "https://brucepower.com",
+        },
+        {
+            title: "Data Analyst Intern",
+            company: "Bruce Power",
+            duration: "May - August 2025",
+            description: "Regulatory Affairs Department",
+            extLink: "https://lauriercs.ca/",
         },
         {
             title: "Software Engineer",
             company: "Laurier Computing Society",
-            duration: "January 2025 - April 2025",
-            description: "Building an interview scheduling platform",
-            extLink: "https://lauriercs.ca/",
-        },
-        {
-            title: "App Developer",
-            company: "Pagent.tv",
-            duration: "December 2024 - March 2025",
-            description: "Developed the frontend for the mobile app",
+            duration: "January - April 2025",
+            description: "Interview Scheduling App",
             extLink: "https://pagent.tv",
         },
+
+        {   title: "App Developer",
+            company: "Pagent.tv",
+            duration: "December 2024 - March 2025",
+            description: "Frontend Development",
+            extLink: "https://pagent.tv"
+        }
     ];
 
     return (
@@ -72,7 +79,7 @@ const Experience = () => {
                     </div>
                 ))}
             </div>
-            <a href="/Zain Babar Resume V5.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Zain Babar Resume V9.pdf" target="_blank" rel="noopener noreferrer">
                 <Button className="resumeButtonExperience">My Resume</Button>
             </a>
         </section>

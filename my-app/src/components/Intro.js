@@ -14,7 +14,7 @@ const Intro = () => {
                 <p className="introDescription">
                     I'm a <span className="importantIntroDescription">Computer Science </span>
                     and <span className="importantIntroDescription">Business Administration </span>
-                    student at <span className="importantIntroDescription">Wilfrid Laurier University </span>
+                    student at <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="https://www.wlu.ca/programs/business-and-economics/undergraduate/business-bba-and-computer-science-bsc/index.html"> <span className="importantIntroDescription">Wilfrid Laurier University </span> </a>
                     who loves creating tech solutions with people, for people. Feel free to reach out!
                 </p>
             </ul>

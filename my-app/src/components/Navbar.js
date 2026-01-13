@@ -82,7 +82,7 @@ const Navbar = () => {
                             </Button>
                         </li>
                         <li>
-                            <a href="/Zain Babar Resume V5.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="/Zain Babar Resume V9.pdf" target="_blank" rel="noopener noreferrer">
                                 <Button className={`resumeButton`}>Resume</Button>
                             </a>
                         </li>
@@ -111,7 +111,7 @@ const Navbar = () => {
                         </Button>
                     </div>
                     <div>
-                        <a href="/Zain Babar Resume V5.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/Zain Babar Resume V9.pdf" target="_blank" rel="noopener noreferrer">
                             <Button className={`resumeButton`}>Resume</Button>
                         </a>
                     </div>
