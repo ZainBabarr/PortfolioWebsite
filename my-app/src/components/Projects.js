@@ -48,7 +48,7 @@ const ProjectsSection = () => {
         {
             title: "Daily Dose of Tech",
             description:
-                "A Twitter bot automated with AWS Lambda that tweets out daily tech news by gathering content from Reddit. Through tweets, the bot has gained 30,000+ impressions",
+                "A Twitter bot automated with AWS Lambda that tweets out daily tech news by gathering content from Reddit. Through tweets, the bot has gained 50,000+ impressions",
             imgSrc: projectImage2,
             tools: ["Python", "Tweepy", "PRAW", "AWS Lambda"],
             gitLink: "https://github.com/ZainBabarr/DailyDoseOfTechBot",

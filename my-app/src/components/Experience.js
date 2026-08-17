@@ -34,25 +34,19 @@ const Experience = () => {
             title: "Cybersecurity Intern",
             company: "Bruce Power",
             duration: "May - August 2026",
-            description: "Incoming Summer 2026",
+            description: "Virtual Plant Simulation",
             extLink: "https://brucepower.com",
         },
         {
-            title: "Data Analyst Intern",
+            title: "Data Engineer Intern",
             company: "Bruce Power",
             duration: "May - August 2025",
             description: "Regulatory Affairs Department",
-            extLink: "https://lauriercs.ca/",
-        },
-        {
-            title: "Software Engineer",
-            company: "Laurier Computing Society",
-            duration: "January - April 2025",
-            description: "Interview Scheduling App",
-            extLink: "https://pagent.tv",
+            extLink: "https://brucepower.com",
         },
 
-        {   title: "App Developer",
+        {
+            title: "App Developer",
             company: "Pagent.tv",
             duration: "December 2024 - March 2025",
             description: "Frontend Development",
@@ -79,7 +73,7 @@ const Experience = () => {
                     </div>
                 ))}
             </div>
-            <a href="/Zain Babar Resume V9.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Zain Babar Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button className="resumeButtonExperience">My Resume</Button>
             </a>
         </section>
